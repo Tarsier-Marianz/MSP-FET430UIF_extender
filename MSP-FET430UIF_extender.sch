@@ -191,4 +191,24 @@ NoConn ~ 2300 3500
 NoConn ~ 2300 3600
 NoConn ~ 2300 3700
 NoConn ~ 2800 3700
+Text Label 2850 3100 0    60   ~ 0
+TDO
+Text Label 2850 3200 0    60   ~ 0
+TDI
+Text Label 2850 3300 0    60   ~ 0
+TMS
+Text Label 2850 3400 0    60   ~ 0
+TCK
+Text Label 2850 3500 0    60   ~ 0
+GND
+Text Label 2850 3600 0    60   ~ 0
+RST
+Text Label 2050 3150 1    60   ~ 0
+VCC_TARGET
+Text Label 2250 2650 3    60   ~ 0
+VCC_TOOL
+Text Label 2050 3400 0    60   ~ 0
+TEST
+Text Label 3950 3700 0    60   ~ 0
+VCC
 $EndSCHEMATC

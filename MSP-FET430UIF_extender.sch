@@ -60,7 +60,7 @@ U 1 1 5AB274B5
 P 2150 2400
 F 0 "P1" H 2150 2600 50  0000 C CNN
 F 1 "CONN_01X03" V 2250 2400 50  0000 C CNN
-F 2 "Connectors_JST:JST_EH_B03B-EH-A_03x2.50mm_Straight" H 2150 2400 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2150 2400 50  0001 C CNN
 F 3 "" H 2150 2400 50  0000 C CNN
 	1    2150 2400
 	0    -1   -1   0   
@@ -210,5 +210,9 @@ VCC_TOOL
 Text Label 2050 3400 0    60   ~ 0
 TEST
 Text Label 3950 3700 0    60   ~ 0
+VCC
+Text Label 3350 2350 0    60   ~ 0
+GND
+Text Label 3250 2350 2    60   ~ 0
 VCC
 $EndSCHEMATC

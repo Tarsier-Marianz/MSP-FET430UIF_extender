@@ -5,7 +5,7 @@ A prototype board serve as an extender for *MSP430 USB-Debug Interface* ([**MSP-
 
 ## Board Preview
 
-![ParallelPort](screenshot.png?raw=true "MSP430 ")
+![MSP430](screenshot.png?raw=true "MSP430 ")
 
 # Credits
 [KiCAD IDE](http://kicad-pcb.org/) letting me use a free software in designing PCB.

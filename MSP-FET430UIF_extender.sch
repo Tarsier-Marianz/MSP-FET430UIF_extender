@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:MSP-FET430UIF_extender-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 P3
+L MSP-FET430UIF_extender-rescue:CONN_01X02 P3
 U 1 1 5AB2742C
 P 3300 2050
 F 0 "P3" H 3300 2200 50  0000 C CNN
@@ -55,7 +26,7 @@ F 3 "" H 3300 2050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 P1
+L MSP-FET430UIF_extender-rescue:CONN_01X03 P1
 U 1 1 5AB274B5
 P 2150 2400
 F 0 "P1" H 2150 2600 50  0000 C CNN
@@ -66,7 +37,7 @@ F 3 "" H 2150 2400 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_02X07 P2
+L MSP-FET430UIF_extender-rescue:CONN_02X07 P2
 U 1 1 5AB27520
 P 2550 3400
 F 0 "P2" H 2550 3800 50  0000 C CNN
@@ -77,7 +48,7 @@ F 3 "" H 2550 2200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R1
+L Device:R R1
 U 1 1 5AB27568
 P 3250 2850
 F 0 "R1" V 3330 2850 50  0000 C CNN
@@ -88,12 +59,12 @@ F 3 "" H 3250 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L Device:C C1
 U 1 1 5AB275F9
 P 3250 3750
 F 0 "C1" H 3275 3850 50  0000 L CNN
 F 1 "1nF" H 3275 3650 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D5.0mm_P2.50mm" H 3288 3600 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3288 3600 50  0001 C CNN
 F 3 "" H 3250 3750 50  0000 C CNN
 	1    3250 3750
 	1    0    0    -1  
@@ -109,9 +80,9 @@ Wire Wire Line
 Wire Wire Line
 	3250 3000 3250 3600
 Wire Wire Line
-	2800 3600 4100 3600
+	2800 3600 3250 3600
 $Comp
-L CONN_01X08 P4
+L MSP-FET430UIF_extender-rescue:CONN_01X08 P4
 U 1 1 5AB277ED
 P 4300 3450
 F 0 "P4" H 4300 3900 50  0000 C CNN
@@ -122,29 +93,29 @@ F 3 "" H 4300 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C2
+L Device:CP C2
 U 1 1 5AB27846
 P 3650 2550
 F 0 "C2" H 3675 2650 50  0000 L CNN
 F 1 "10uF 16V" H 3675 2450 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D5.0mm_P2.50mm" H 3688 2400 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P3.50mm" H 3688 2400 50  0001 C CNN
 F 3 "" H 3650 2550 50  0000 C CNN
 	1    3650 2550
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C3
+L Device:C C3
 U 1 1 5AB2791E
 P 3900 2550
 F 0 "C3" H 3925 2650 50  0000 L CNN
 F 1 "0.1uF" H 3925 2450 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D5.0mm_P2.50mm" H 3938 2400 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3938 2400 50  0001 C CNN
 F 3 "" H 3900 2550 50  0000 C CNN
 	1    3900 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 2700 3900 2700
+	2150 2700 3250 2700
 Connection ~ 3650 2700
 Wire Wire Line
 	3900 2700 3900 3700
@@ -155,7 +126,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 2250 3350 2400
 Wire Wire Line
-	3350 2400 3900 2400
+	3350 2400 3650 2400
 Connection ~ 3650 2400
 Wire Wire Line
 	2150 2600 2150 2700
@@ -169,7 +140,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 3400 4100 3400
 Wire Wire Line
-	2800 3500 4100 3500
+	2800 3500 3600 3500
 Wire Wire Line
 	3250 3900 3600 3900
 Wire Wire Line
@@ -215,4 +186,14 @@ Text Label 3350 2350 0    60   ~ 0
 GND
 Text Label 3250 2350 2    60   ~ 0
 VCC
+Wire Wire Line
+	3650 2700 3900 2700
+Wire Wire Line
+	3650 2400 3900 2400
+Wire Wire Line
+	3250 2700 3650 2700
+Wire Wire Line
+	3600 3500 4100 3500
+Wire Wire Line
+	3250 3600 4100 3600
 $EndSCHEMATC
